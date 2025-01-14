@@ -2,7 +2,7 @@ const fs = require('fs/promises');
 const xlsx = require('xlsx');
 const Transaction = require("../models/Transaction");
 const { Responses, transactionsResponses } = require("../responses");
-const { hebrewMonths, filterDataByHebrewMonth } = require("../utils/MonthsFilter");
+const { hebrewMonths, filterDataByHebrewMonth } = require("../utils/monthsFilter");
 const { getUsdToIlsRate, parseCurrency, headerMapping, robustNormalize } = require('../utils/xlsx');
 
 const success = Responses.success;
